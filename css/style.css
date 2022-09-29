@@ -1,0 +1,18 @@
+* {
+    transition: all 0.25s;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#head-game {
+    width: 80vh;
+}
+.option {
+    width: 70vh;
+}
