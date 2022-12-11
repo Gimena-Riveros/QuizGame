@@ -1,0 +1,12 @@
+[
+    {
+        "cathegory":"Art and literature",
+        "question":"How paint the Mona Lisa?",
+        "answer":"Leonardo daVinci",
+        "badanswer1":"Miguel Angel",
+        "badanswer2":"Picasso",
+        "badanswer3":"Monet",
+        "images":"https://historia.nationalgeographic.com.es/medio/2018/06/11/01-mona-lisa-marco-gioconda-louvre_2d7f91a1.jpg",
+        "object_fit":"cover"
+    }
+]

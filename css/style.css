@@ -5,14 +5,39 @@ body {
     margin: 0;
     padding: 0;
     background: steelblue;
+    background-image: url("https://i.giphy.com/media/BHNfhgU63qrks/giphy.webp");
+    /*
+    "https://media.tenor.com/EbZAp_oLAcYAAAAC/astronaut.gif"
+    ""
+    */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 #head-game {
     width: 80vh;
+    background: whitesmoke;
+    margin: 10px;
+    padding: 10px;
 }
 .option {
     width: 70vh;
+    background: whitesmoke;
+    margin: 10px;
+    padding: 10px;
+}
+
+.table-game {
+    width: 90vh;
+    height: 90vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid whitesmoke;
 }
