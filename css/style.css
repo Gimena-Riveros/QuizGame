@@ -8,7 +8,10 @@ body {
     background-image: url("https://i.giphy.com/media/BHNfhgU63qrks/giphy.webp");
     /*
     "https://media.tenor.com/EbZAp_oLAcYAAAAC/astronaut.gif"
-    ""
+    
+    "https://wallpaperaccess.com/full/2825704.gif"
+    "https://i.pinimg.com/originals/68/31/45/6831454cf213ed7ffa541fe666fa9cf8.gif"
+    "https://i.pinimg.com/originals/68/31/45/6831454cf213ed7ffa541fe666fa9cf8.gif"
     */
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,18 +21,37 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-size: 120%;
 }
 #head-game {
-    width: 80vh;
-    background: whitesmoke;
-    margin: 10px;
-    padding: 10px;
+    width: 70vh;  
+    min-height: 120px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .option {
-    width: 70vh;
+    width: 60vh;
+    cursor: pointer;   
+}
+.option:hover {
+    background-color: teal;
+}
+
+#head-game, .option {
     background: whitesmoke;
     margin: 10px;
     padding: 10px;
+    border-radius: 10px;
+}
+#head-game img {
+    width: 20%;
+    height: 60%;
+    object-fit: contain;
+}
+.btn {
+    margin-top: 10px;
 }
 
 .table-game {
