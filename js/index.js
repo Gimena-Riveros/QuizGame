@@ -1,4 +1,6 @@
-loadQuestions(0)
+let questionIndex = 0;
+let hits = 0;
+loadQuestions(questionIndex)
 
 function loadQuestions(index) {
     // al sacar let la variable persiste mas alla de esta funcion, ahora es global
@@ -39,6 +41,7 @@ async function selectAnOption(index) {
         icon: "success",        
         imageHeight: 150,
         });
+        hits++;
     }else {
         await Swal.fire({
             title: "So sad!",
@@ -47,4 +50,15 @@ async function selectAnOption(index) {
             imageHeight: 150,
             });
     }
+
+    questionIndex++;
+    if(questionIndex >= dbQuestions.length) {
+        await Swal.fire({
+            title: "GAME OVER",
+            text: `Hits answer is ${hits}/${dbQuestions.length}`,
+            });
+        questionIndex = 0;
+        hits = 0;
+    }
+    loadQuestions(questionIndex);
 }
